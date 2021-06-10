@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <UseWindowsForms>true</UseWindowsForms>
+        <TargetFrameworks>net462;net5.0-windows</TargetFrameworks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <PlatformTarget>x86</PlatformTarget>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <PlatformTarget>x86</PlatformTarget>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Flurl" Version="3.0.2" />
+      <PackageReference Include="Flurl.Http" Version="3.2.0" />
+      <PackageReference Include="InputSimulator" Version="1.0.4" />
+      <PackageReference Include="InputSimulatorCore" Version="1.0.5" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    </ItemGroup>
+
+</Project>
