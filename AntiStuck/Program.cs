@@ -52,8 +52,6 @@ namespace AntiStuck
                         continue;
                     }
 
-                    await QuitGame();
-
                     var gameStatus = await ApiService.GetGameStats();
                     if (gameStatus.GameTime < 91)
                     {
