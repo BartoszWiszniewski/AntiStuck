@@ -37,6 +37,7 @@ namespace AntiStuck
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex);
                 return false;
             }
         }

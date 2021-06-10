@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Drawing;
-using System.Net;
 using System.Net.Http;
-using System.Runtime.InteropServices;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using WindowsInput;
-using WindowsInput.Native;
 using AntiStuck.WinApi;
 using Flurl.Http;
 using Flurl.Http.Configuration;
