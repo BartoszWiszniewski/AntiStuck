@@ -45,7 +45,7 @@ namespace AntiStuck
                         continue;
                     }
 
-                    if ((await ApiService.IsLiveGameRunning()) && !IsGameOnDisplay())
+                    if (!(await ApiService.IsLiveGameRunning()) && IsGameOnDisplay())
                     {
                         count++;
                         await Task.Delay(1000);
